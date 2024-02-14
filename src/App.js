@@ -18,7 +18,7 @@ const App = () => {
   }, [])
 
   const readCat = () => {
-    fetch("http://localhost:3000/cats")
+    fetch("https://cat-tinder-lsl6.onrender.com/cats")
       .then((response) => response.json())
       .then((data) => setCats(data))
       .catch((error) => console.log(error))
